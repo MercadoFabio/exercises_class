@@ -59,7 +59,7 @@ describe("Formulario de Registro de Usuarios", () => {
         localStorage.setItem("usuarios", JSON.stringify([{ nombre: "Carlos López", correo: "carlos@example.com" }]));
 
         // Simular la recarga
-        require("../src/script");
+        require("./index.js");
 
         const listaUsuarios = document.getElementById("listaUsuarios").innerHTML;
         expect(listaUsuarios.includes("Carlos López - carlos@example.com")).toBe(true);
