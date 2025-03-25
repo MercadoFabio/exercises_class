@@ -15,8 +15,6 @@ function fibonacci(n) {
 }
 
 function generarFibonacci() {
-    const mensaje = document.getElementById("mensajeFibonacci");
-    mensaje.textContent = "Por favor ingresa un número válido.";
    // COMPLETAR
 }
 
