@@ -1,0 +1,14 @@
+{
+  "name": "exercise_2",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "private": true,
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
