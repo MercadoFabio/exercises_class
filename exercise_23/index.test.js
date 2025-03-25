@@ -1,24 +1,23 @@
-const { registrarUsuario } = require("./index.js");
+const { registrarUsuario, mostrarUsuarios } = require("./index.js");
 
 describe("Formulario de Registro de Usuarios", () => {
     beforeEach(() => {
         document.body.innerHTML = `
             <input type="text" id="nombre">
             <input type="email" id="correo">
-            <button id="registrarUsuario"></button>
+            <button id="registrar"></button>
             <ul id="listaUsuarios"></ul>
+            <div id="mensajeError"></div>
         `;
 
         localStorage.clear(); // Limpiar almacenamiento antes de cada prueba
-
-        document.getElementById("registrarUsuario").addEventListener("click", registrarUsuario);
     });
 
     test("Debe registrar un usuario correctamente", () => {
         document.getElementById("nombre").value = "Juan Pérez";
         document.getElementById("correo").value = "juan@example.com";
 
-        document.getElementById("registrarUsuario").click();
+        registrarUsuario();
 
         const listaUsuarios = document.getElementById("listaUsuarios").innerHTML;
         expect(listaUsuarios.includes("Juan Pérez - juan@example.com")).toBe(true);
@@ -28,7 +27,7 @@ describe("Formulario de Registro de Usuarios", () => {
         document.getElementById("nombre").value = "";
         document.getElementById("correo").value = "juan@example.com";
 
-        document.getElementById("registrarUsuario").click();
+        registrarUsuario();
 
         const listaUsuarios = document.getElementById("listaUsuarios").innerHTML;
         expect(listaUsuarios).toBe(""); // La lista debe seguir vacía
@@ -38,7 +37,7 @@ describe("Formulario de Registro de Usuarios", () => {
         document.getElementById("nombre").value = "Juan Pérez";
         document.getElementById("correo").value = "juan.com";
 
-        document.getElementById("registrarUsuario").click();
+        registrarUsuario();
 
         const listaUsuarios = document.getElementById("listaUsuarios").innerHTML;
         expect(listaUsuarios).toBe(""); // No se debe agregar el usuario
@@ -48,7 +47,7 @@ describe("Formulario de Registro de Usuarios", () => {
         document.getElementById("nombre").value = "Ana Gómez";
         document.getElementById("correo").value = "ana@example.com";
 
-        document.getElementById("registrarUsuario").click();
+        registrarUsuario();
 
         const almacenados = JSON.parse(localStorage.getItem("usuarios"));
         expect(almacenados.length).toBe(1);
@@ -58,8 +57,7 @@ describe("Formulario de Registro de Usuarios", () => {
     test("Debe recuperar usuarios almacenados en localStorage al recargar", () => {
         localStorage.setItem("usuarios", JSON.stringify([{ nombre: "Carlos López", correo: "carlos@example.com" }]));
 
-        // Simular la recarga
-        require("./index.js");
+        mostrarUsuarios();
 
         const listaUsuarios = document.getElementById("listaUsuarios").innerHTML;
         expect(listaUsuarios.includes("Carlos López - carlos@example.com")).toBe(true);

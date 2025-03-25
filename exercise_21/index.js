@@ -11,15 +11,14 @@ Guardar en localStorage el último número ingresado y cargarlo al abrir la pág
 */
 
 function fibonacci(n) {
-
-
+   // COMPLETAR
 }
 
 function generarFibonacci() {
-
+    const mensaje = document.getElementById("mensajeFibonacci");
+    mensaje.textContent = "Por favor ingresa un número válido.";
+   // COMPLETAR
 }
-
-
 
 if (typeof document !== 'undefined') {
     document.addEventListener("DOMContentLoaded", () => {

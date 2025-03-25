@@ -8,14 +8,18 @@ Busque un número dentro del array y diga si está presente o no.
 */
 
 function ordenarArray(arr) {
+    // COMPLETAR
 }
 
 function manejarOrdenamiento() {
-
+    const input = document.getElementById("inputArray");
+    const resultado = document.getElementById("resultadoOrden");
+    resultado.textContent = `Ordenado: ${ordenarArray(input.value)}`;
+    // COMPLETAR
 }
 
 function buscarEnArray() {
-
+    // COMPLETAR
 }
 
 if (typeof document !== 'undefined') {

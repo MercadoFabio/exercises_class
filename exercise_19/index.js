@@ -8,6 +8,12 @@ Debe indicar si el número ingresado es mayor o menor hasta que lo adivine.
 
     Mostrar las estadísticas de partidas anteriores.*/
 
+let numeroSecreto = Math.floor(Math.random() * 100) + 1;
+let intentos = 0;
+
+function setNumeroSecreto(numero) {
+    numeroSecreto = numero;
+}
 
 function verificarNumero() {
 
@@ -21,4 +27,4 @@ if (typeof document !== 'undefined') {
     });
 }
 
-module.exports = { verificarNumero };
+module.exports = { verificarNumero,setNumeroSecreto };

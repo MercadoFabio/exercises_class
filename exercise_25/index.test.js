@@ -7,6 +7,7 @@ describe("To-Do List", () => {
             <button id="agregarTarea"></button>
             <ul id="listaTareas"></ul>
         `;
+        localStorage.clear();
     });
 
     test("Debe agregar una tarea a la lista", () => {
@@ -18,7 +19,16 @@ describe("To-Do List", () => {
     test("Debe eliminar una tarea de la lista", () => {
         document.getElementById("nuevaTarea").value = "Comprar pan";
         agregarTarea();
-        eliminarTarea({ target: document.querySelector("#listaTareas li") });
+        const eliminarButton = document.querySelector("#listaTareas li button");
+        eliminarTarea({ target: eliminarButton });
         expect(document.querySelectorAll("#listaTareas li").length).toBe(0);
+    });
+
+    test("Debe guardar las tareas en localStorage", () => {
+        document.getElementById("nuevaTarea").value = "Comprar pan";
+        agregarTarea();
+        const tareas = JSON.parse(localStorage.getItem("tareas"));
+        expect(tareas.length).toBe(1);
+        expect(tareas[0].texto).toBe("Comprar pan");
     });
 });
