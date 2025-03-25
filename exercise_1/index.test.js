@@ -1,6 +1,5 @@
 const { buscarElemento } = require("./index.js");
 
-
 describe("buscarElemento", () => {
     test("Debe encontrar elementos en el array", () => {
         expect(buscarElemento([1, 2, 3, 4], 3)).toBe(true);
