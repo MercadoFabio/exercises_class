@@ -1,24 +1,27 @@
-const { fibonacci, generarFibonacci } = require("./index.js");
+const { ordenarArray,manejarOrdenamiento, buscarEnArray } = require("./index.js");
 
-describe("Generador de Fibonacci", () => {
+describe("Ordenar y Buscar en un Array", () => {
     beforeEach(() => {
         document.body.innerHTML = `
-            <input type="number" id="inputFibonacci">
-            <button id="generarFibonacci"></button>
-            <p id="mensajeFibonacci"></p>
-            <ul id="listaFibonacci"></ul>
+            <input type="text" id="inputArray">
+            <button id="ordenarArray"></button>
+            <button id="buscarNumero"></button>
+            <input type="number" id="inputBusqueda">
+            <p id="resultadoOrden"></p>
+            <p id="resultadoBusqueda"></p>
         `;
     });
 
-    test("Debe generar la secuencia de Fibonacci correctamente", () => {
-        document.getElementById("inputFibonacci").value = "10";
-        generarFibonacci();
-        expect(document.querySelectorAll("#listaFibonacci li").length).toBe(6);
+    test("Debe ordenar correctamente un array", () => {
+        document.getElementById("inputArray").value = "10,5,3,8";
+        manejarOrdenamiento();
+        expect(document.getElementById("resultadoOrden").textContent).toBe("Ordenado: 3, 5, 8, 10");
     });
 
-    test("Debe manejar entradas no válidas", () => {
-        document.getElementById("inputFibonacci").value = "-5";
-        generarFibonacci();
-        expect(document.getElementById("mensajeFibonacci").textContent).toBe("Por favor ingresa un número válido.");
+    test("Debe encontrar un número dentro del array", () => {
+        document.getElementById("inputArray").value = "10,5,3,8";
+        document.getElementById("inputBusqueda").value = "5";
+        buscarEnArray();
+        expect(document.getElementById("resultadoBusqueda").textContent).toBe("Número encontrado");
     });
 });

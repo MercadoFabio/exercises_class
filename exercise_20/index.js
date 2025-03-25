@@ -1,19 +1,16 @@
-/*Juego de Adivinanza con Estadísticas Guardadas
+/*JConversor de Números (Binario, Decimal, Romano)
 🎯 Enunciado:
-    Crea un juego en el que el usuario debe adivinar un número aleatorio entre 1 y 100.
+Crea una aplicación que permita al usuario convertir números entre los sistemas binario, decimal y romano.
 
-Debe indicar si el número ingresado es mayor o menor hasta que lo adivine.
+El usuario elige el sistema de entrada y salida.
 
-    Guardar en localStorage el número de intentos del usuario.
-
-    Mostrar las estadísticas de partidas anteriores.*/
+Debe manejar conversiones incorrectas.*/
 
 
-function verificarNumero() {
-
-    // COMPLETAR: Comparar con el número secreto y mostrar mensaje
-    // COMPLETAR: Guardar el número de intentos en localStorage y mostrar estadísticas
+function convertirNumero() {
+    // COMPLETAR: Implementar la conversión entre los distintos sistemas numéricos
 }
+
 
 if (typeof document !== 'undefined') {
     document.addEventListener("DOMContentLoaded", () => {
@@ -21,4 +18,4 @@ if (typeof document !== 'undefined') {
     });
 }
 
-module.exports = { verificarNumero };
+module.exports = { convertirNumero };

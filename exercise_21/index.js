@@ -1,17 +1,24 @@
-/*Juego de Adivinanza con Estadísticas Guardadas
+/*Generador de Secuencia de Fibonacci con Límite
 🎯 Enunciado:
-    Crea un juego en el que el usuario debe adivinar un número aleatorio entre 1 y 100.
+Crea una aplicación donde el usuario ingrese un número N y se genere la secuencia de Fibonacci hasta ese número.
 
-Debe indicar si el número ingresado es mayor o menor hasta que lo adivine.
+Validar que el número ingresado es mayor que 0.
 
-    Guardar en localStorage el número de intentos del usuario.
+Mostrar la secuencia en pantalla.
 
-    Mostrar las estadísticas de partidas anteriores.*/
+Guardar en localStorage el último número ingresado y cargarlo al abrir la página.
+
+*/
+
+function fibonacci(n) {
 
 
-function convertirNumero() {
-    // COMPLETAR: Implementar la conversión entre los distintos sistemas numéricos
 }
+
+function generarFibonacci() {
+
+}
+
 
 
 if (typeof document !== 'undefined') {
@@ -20,4 +27,4 @@ if (typeof document !== 'undefined') {
     });
 }
 
-module.exports = { convertirNumero };
+module.exports = { fibonacci, generarFibonacci };

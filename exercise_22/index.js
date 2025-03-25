@@ -1,25 +1,22 @@
-/*Generador de Secuencia de Fibonacci con Límite
+/*Ordenar y Buscar en un Array Ingresado por el Usuario
 🎯 Enunciado:
-Crea una aplicación donde el usuario ingrese un número N y se genere la secuencia de Fibonacci hasta ese número.
+Crea una aplicación donde el usuario ingrese números separados por comas:
 
-Validar que el número ingresado es mayor que 0.
+Ordene los números de menor a mayor.
 
-Mostrar la secuencia en pantalla.
-
-Guardar en localStorage el último número ingresado y cargarlo al abrir la página.
-
+Busque un número dentro del array y diga si está presente o no.
 */
 
-function fibonacci(n) {
+function ordenarArray(arr) {
+}
 
+function manejarOrdenamiento() {
 
 }
 
-function generarFibonacci() {
+function buscarEnArray() {
 
 }
-
-
 
 if (typeof document !== 'undefined') {
     document.addEventListener("DOMContentLoaded", () => {
@@ -27,4 +24,4 @@ if (typeof document !== 'undefined') {
     });
 }
 
-module.exports = { fibonacci, generarFibonacci };
+module.exports = { ordenarArray, manejarOrdenamiento,buscarEnArray };

@@ -1,27 +1,24 @@
-const { convertirNumero } = require("./index.js");
+const { fibonacci, generarFibonacci } = require("./index.js");
 
-describe("Conversor de Números", () => {
+describe("Generador de Fibonacci", () => {
     beforeEach(() => {
         document.body.innerHTML = `
-            <input type="text" id="inputNumero">
-            <select id="sistemaEntrada"><option value="decimal"></option></select>
-            <select id="sistemaSalida"><option value="binario"></option></select>
-            <button id="convertir"></button>
-            <p id="resultado"></p>
+            <input type="number" id="inputFibonacci">
+            <button id="generarFibonacci"></button>
+            <p id="mensajeFibonacci"></p>
+            <ul id="listaFibonacci"></ul>
         `;
     });
 
-    test("Debe convertir decimal a binario", () => {
-        document.getElementById("inputNumero").value = "10";
-        document.getElementById("sistemaEntrada").value = "decimal";
-        document.getElementById("sistemaSalida").value = "binario";
-        convertirNumero();
-        expect(document.getElementById("resultado").textContent).toBe("1010");
+    test("Debe generar la secuencia de Fibonacci correctamente", () => {
+        document.getElementById("inputFibonacci").value = "10";
+        generarFibonacci();
+        expect(document.querySelectorAll("#listaFibonacci li").length).toBe(6);
     });
 
-    test("Debe manejar entradas inválidas", () => {
-        document.getElementById("inputNumero").value = "XYZ";
-        convertirNumero();
-        expect(document.getElementById("resultado").textContent).toBe("Entrada no válida");
+    test("Debe manejar entradas no válidas", () => {
+        document.getElementById("inputFibonacci").value = "-5";
+        generarFibonacci();
+        expect(document.getElementById("mensajeFibonacci").textContent).toBe("Por favor ingresa un número válido.");
     });
 });

@@ -1,25 +1,27 @@
-const { verificarNumero } = require("./index.js");
+const { convertirNumero } = require("./index.js");
 
-describe("Juego de Adivinanza", () => {
+describe("Conversor de Números", () => {
     beforeEach(() => {
         document.body.innerHTML = `
-            <input type="number" id="inputNumero">
-            <button id="verificarNumero"></button>
-            <p id="mensaje"></p>
+            <input type="text" id="inputNumero">
+            <select id="sistemaEntrada"><option value="decimal"></option></select>
+            <select id="sistemaSalida"><option value="binario"></option></select>
+            <button id="convertir"></button>
+            <p id="resultado"></p>
         `;
     });
 
-    test("Debe mostrar si el número es mayor o menor", () => {
-        document.getElementById("inputNumero").value = "50";
-        verificarNumero();
-        let mensaje = document.getElementById("mensaje").textContent;
-        expect(mensaje.includes("mayor") || mensaje.includes("menor")).toBe(true);
+    test("Debe convertir decimal a binario", () => {
+        document.getElementById("inputNumero").value = "10";
+        document.getElementById("sistemaEntrada").value = "decimal";
+        document.getElementById("sistemaSalida").value = "binario";
+        convertirNumero();
+        expect(document.getElementById("resultado").textContent).toBe("1010");
     });
 
-    test("Debe detectar cuando el usuario acierta", () => {
-        global.numeroSecreto = 30;
-        document.getElementById("inputNumero").value = "30";
-        verificarNumero();
-        expect(document.getElementById("mensaje").textContent).toBe("¡Correcto! Adivinaste el número.");
+    test("Debe manejar entradas inválidas", () => {
+        document.getElementById("inputNumero").value = "XYZ";
+        convertirNumero();
+        expect(document.getElementById("resultado").textContent).toBe("Entrada no válida");
     });
 });

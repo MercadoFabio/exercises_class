@@ -1,22 +1,22 @@
-/*Ordenar y Buscar en un Array Ingresado por el Usuario
+/*Formulario de Registro con Validaciones y Almacenamiento
 🎯 Enunciado:
-Crea una aplicación donde el usuario ingrese números separados por comas:
+Crea un formulario donde el usuario registre su nombre y correo.
 
-Ordene los números de menor a mayor.
+Validar que los datos sean correctos.
 
-Busque un número dentro del array y diga si está presente o no.
+Guardar en localStorage los registros.
+
+Mostrar la lista de usuarios registrados.
 */
 
-function ordenarArray(arr) {
+function registrarUsuario() {
+    // COMPLETAR: Obtener nombre, correo y listaUsuarios
+    // COMPLETAR: Validar nombre y correo antes de guardar
+    // COMPLETAR: Guardar en localStorage
+    // COMPLETAR: Mostrar en listaUsuarios
 }
 
-function manejarOrdenamiento() {
 
-}
-
-function buscarEnArray() {
-
-}
 
 if (typeof document !== 'undefined') {
     document.addEventListener("DOMContentLoaded", () => {
@@ -24,4 +24,4 @@ if (typeof document !== 'undefined') {
     });
 }
 
-module.exports = { ordenarArray, manejarOrdenamiento,buscarEnArray };
+module.exports = { registrarUsuario };
