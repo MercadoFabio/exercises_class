@@ -5,8 +5,7 @@
   "type": "module",
   "main": "index.test.js",
   "scripts": {
-    "test": "jest"
-  },
+    "test": "jest"},
   "private": true,
   "devDependencies": {
     "jest": "^29.7.0"
