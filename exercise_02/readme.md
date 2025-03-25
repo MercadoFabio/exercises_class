@@ -1,4 +1,4 @@
-# Encontrar el Segundo Número Mayor
+# Ejercicio 02: Encontrar el Segundo Número Mayor
 
 ## Descripción:
 Crea una función `segundoMayor(arr)` que encuentre el segundo número más grande en un array. Si el array tiene menos de dos elementos, la función debe devolver `null`.

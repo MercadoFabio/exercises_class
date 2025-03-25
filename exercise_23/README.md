@@ -1,4 +1,4 @@
-# Formulario de Registro con Validaciones y Almacenamiento
+# Ejercicio 23: Formulario de Registro con Validaciones y Almacenamiento
 
 ## Descripción
 Crea un formulario donde los usuarios puedan registrar su nombre y correo electrónico. El sistema debe validar que los datos ingresados sean correctos antes de guardarlos. Los registros de los usuarios deben almacenarse en el `localStorage` y mostrarse en una lista.

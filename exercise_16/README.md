@@ -1,4 +1,4 @@
-# Encontrar el Único Número Diferente
+# Ejercicio 16: Encontrar el Único Número Diferente
 
 ## Descripción
 En un array donde todos los números aparecen dos veces excepto uno que aparece una sola vez, encuentra ese número único.

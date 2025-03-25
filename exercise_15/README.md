@@ -1,4 +1,4 @@
-# Subcadena Más Larga Sin Repeticiones
+# Ejercicio 15: Subcadena Más Larga Sin Repeticiones
 
 ## Descripción
 Dada una cadena, encuentra la longitud de la subcadena más larga que no tenga caracteres repetidos.

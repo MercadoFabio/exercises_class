@@ -1,4 +1,4 @@
-# Chat en Tiempo Real con LocalStorage
+# Ejercicio 28: Chat en Tiempo Real con LocalStorage
 
 ## Descripción
 

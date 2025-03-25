@@ -1,4 +1,4 @@
-# Ordenar un Array en Forma Descendente
+# Ejercicio 03: Ordenar un Array en Forma Descendente
 
 ## Descripción:
 Crea una función `ordenarDescendente(arr)` que ordene los números de un array de mayor a menor.

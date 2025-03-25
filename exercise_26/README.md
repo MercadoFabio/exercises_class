@@ -1,4 +1,4 @@
-# Galería de Imágenes con Fetch API
+# Ejercicio 26: Galería de Imágenes con Fetch API
 
 ## Descripción
 

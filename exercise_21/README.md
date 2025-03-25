@@ -1,4 +1,4 @@
-# Generador de Secuencia de Fibonacci con Límite
+# Ejercicio 21: Generador de Secuencia de Fibonacci con Límite
 
 ## Descripción
 Crea una aplicación web donde el usuario ingresa un número `N` y se genera la secuencia de Fibonacci hasta ese número. La secuencia debe mostrarse en pantalla y validarse para que el número ingresado sea mayor que 0.

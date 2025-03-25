@@ -1,4 +1,4 @@
-# Conversión de Binario a Decimal
+# Ejercicio 08: Conversión de Binario a Decimal
 
 ## Descripción:
 Crea una función `binarioADecimal(binario)` que convierta un número binario a decimal.

@@ -1,4 +1,4 @@
-# Juego del Ahorcado
+# Ejercicio 29: Juego del Ahorcado
 
 Este es un juego interactivo del ahorcado en el que los jugadores deben adivinar una palabra secreta. Cada vez que un jugador ingresa una letra, el juego revela si la letra está en la palabra secreta o no. El jugador tiene un número limitado de intentos para adivinar la palabra antes de perder el juego.
 

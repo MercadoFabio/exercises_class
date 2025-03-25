@@ -1,4 +1,4 @@
-# Juego de Adivinanza con Estadísticas Guardadas
+# Ejercicio 19: Juego de Adivinanza con Estadísticas Guardadas
 
 ## Descripción
 Crea un juego en el que el usuario debe adivinar un número aleatorio entre 1 y 100. El sistema debe indicar si el número ingresado es mayor o menor que el número secreto hasta que el usuario lo adivine. 

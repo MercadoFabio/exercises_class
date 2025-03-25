@@ -1,4 +1,4 @@
-# Encontrar el Número Menor en un Array
+# Ejercicio 05: Encontrar el Número Menor en un Array
 
 ## Descripción:
 Crea una función `numeroMenor(arr)` que reciba un array de números y devuelva el menor de ellos.

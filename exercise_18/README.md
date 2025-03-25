@@ -1,4 +1,4 @@
-# Número Perdido en una Secuencia
+# Ejercicio 18: Número Perdido en una Secuencia
 
 ## Descripción
 Dado un array de números enteros consecutivos en orden ascendente, pero con un número faltante, crea una función `numeroPerdido(arr)` que lo encuentre.

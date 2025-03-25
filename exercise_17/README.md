@@ -1,4 +1,4 @@
-# Suma de Dígitos hasta un Solo Dígito
+# Ejercicio 17: Suma de Dígitos hasta un Solo Dígito
 
 ## Descripción
 Crea una función `sumaDigitos(n)` que sume los dígitos de un número hasta que el resultado sea un solo dígito.

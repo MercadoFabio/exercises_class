@@ -1,4 +1,4 @@
-# Sumar los Números Pares de un Array
+# Ejercicio 07: Sumar los Números Pares de un Array
 
 ## Descripción:
 Crea una función `sumarPares(arr)` que reciba un array de números y devuelva la suma de los números pares.

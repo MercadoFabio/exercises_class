@@ -1,4 +1,4 @@
-# Ordenar y Buscar en un Array Ingresado por el Usuario
+# Ejercicio 22: Ordenar y Buscar en un Array Ingresado por el Usuario
 
 ## Descripción
 Crea una aplicación web donde el usuario ingresa un conjunto de números separados por comas. 

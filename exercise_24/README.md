@@ -1,4 +1,4 @@
-# Cronómetro con Inicio, Pausa y Reinicio
+# Ejercicio 24: Cronómetro con Inicio, Pausa y Reinicio
 
 ## Descripción
 Este proyecto consiste en la creación de un cronómetro con tres funcionalidades básicas: inicio, pausa y reinicio. El cronómetro debe mostrar el tiempo en el formato `mm:ss` y debe ser interactivo mediante tres botones:
